@@ -1,3 +1,4 @@
+In a zoo management system, animals share a behavior such as eating while dogs also bark. Represent this using inheritance.
 package NewInheritance;
 //Task No:1
 public class Zootask {
