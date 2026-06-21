@@ -24,3 +24,29 @@ public class Zootask {
 	}
 
 }
+
+A drawing application defines shapes while circles and rectangles implement their own area calculations.
+
+package NewInheritance;
+
+ class Circumferencetask {
+	// Task no:5
+	  
+		 int r=4;
+		 float Area=(float)3.14*r*2;
+		 float Circumference=(float)3.14*r*2;
+	  
+		 void area() {
+			System.out.println("The area of circle is:"+Area);
+			System.out.println("The circumference of circle is= "+Circumference);
+		}
+
+			public static void main(String[] args) {
+				Circumferencetask st=new Circumferencetask();
+				st.area();
+				
+		}
+
+	  }	
+
+	 
