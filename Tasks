@@ -1,0 +1,25 @@
+package NewInheritance;
+//Task No:1
+public class Zootask {
+	String animal="dog";
+	void bark() {
+		System.out.println("dog is berking over the juncle");
+	}
+	public class barking extends Zootask {
+		void bark(String barking) {
+		System.out.println("barking name is"+barking);	
+			
+		}
+	}
+	
+
+	public static void main(String[] args) {
+		Zootask b=new Zootask();
+		b.bark();
+		
+		
+		
+		
+	}
+
+}
