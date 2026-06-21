@@ -49,4 +49,42 @@ package NewInheritance;
 
 	  }	
 
-	 
+A college database represents a person with name and age, while a student has additional details such as rollNo and marks.	 
+package NewInheritance;
+//Task No:3
+//public class Database {
+	class parent1{
+		int age=30;
+		String name="Ragul";
+		int rollno=101;
+		int marks=450;
+		public void show() {
+			System.out.println("parent1 class method is created....");
+		}
+		
+	}
+   class child extends parent1{
+	   public void show() {
+		   String name="Ramesh";
+//		   int rollno=101;
+//		   int marks=450;
+		   System.out.println("Child class method is created");
+		   System.out.println("Name of child be:"+super.name);
+		//   System.out.println("Name of parrent1 child be:"+name);
+		   System.out.println("age of child be:"+super.age);
+		//   System.out.println("age of parrent1 child be:"+age);
+		   System.out.println("Roll no of child be:"+super.rollno);
+		//   System.out.println("Roll no parrent1 child be:"+rollno);
+		   System.out.println("Marks no of child be:"+super.marks);
+		//   System.out.println("Marks no parrent1 child be:"+marks);
+	   }
+   }
+    public class Database { 
+	public static void main(String[] args) {
+		//object
+		child c=new child ();
+		c.show();
+
+	}
+
+}
