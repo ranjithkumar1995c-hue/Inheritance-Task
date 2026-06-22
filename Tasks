@@ -289,6 +289,79 @@ class Transport {
 
 }
 
+A school system represents a general person and extends it into teacher and student roles.
+//Task NO:7
+ class School {
+	int Date=22/06/2026;
+	int Rollno=1;
+	String Name="Raguvaren student";
+	String name="vani techer";
+	String sec="A Sec";
+	String role="present";
+	void disp() {
+		System.out.println("School Head office attdence submited");
+	}}
+ class teacher extends School{
+	    int Date=22/6/2026;
+	    int Rollno=2;
+		String Name="Abishek student";
+		String name="priya techer";
+		String sec="B Sec";
+		String Role="Absent";
+		public void show() {
+			System.out.println("Techer for submitted Attedence book");
+			System.out.println("Date wise be:"+super.Date);
+			System.out.println("Date wise be :"+Date);
+			System.out.println("Rollno wise be:"+super.Rollno);
+			System.out.println("Rollno wise be:"+Rollno);
+			System.out.println("Name wise be:"+super.Name);
+			System.out.println("Name wise be:"+Name);
+			System.out.println("name wise be:"+super.name);
+			System.out.println("name wise be:"+name);
+			System.out.println("sec  wise be:"+super.sec);
+			System.out.println("sec  wise be:"+sec);
+			System.out.println("Role wise be:"+super.role);
+			System.out.println("Role wise be:"+role);
+			
+		}
+	 
+ }
+	 class revise extends teacher{
+		  int Date=22/6/2026;
+		  int Rollno=3;
+		  String Name="mani student";
+		  String name="vani techer";
+		  String sec="c Sec";
+		  String Role="present";
+		  public void show() {
+			  System.out.println("Return to head office checking");
+			  System.out.println("Date wise be:"+super.Date);
+			  System.out.println("Rollno wise be:"+super.Rollno);
+			  System.out.println("Name wise be:"+super.Name);
+			  System.out.println("name wise be:"+super.name);
+			  System.out.println("sec wise be:"+super.sec);
+			  System.out.println("Role wise be:"+super.Role);
+			 super.show(); 
+		  }
+		 
+		 
+	 }
+	
+	
+	 public class Schoolsystem {
+	 public static void main(String[] args) {
+		 revise r =new revise();
+		 r.disp();
+		 r.show();
+		 
+		
+		 
+
+	}
+
+}
+
+
 
 
 
