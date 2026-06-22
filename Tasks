@@ -360,6 +360,81 @@ A school system represents a general person and extends it into teacher and stud
 	}
 
 }
+A hospital system represents staff and extends it into doctor and nurse roles.
+
+package NewInheritance;
+//Task No:9
+class system{
+	int Date=22 /06/ 2026;
+	int idno=1457&3456;
+	String Name="Raguvaren doctor";
+	String name="vani nurse";
+	String sec="A Block";
+	String role="present";
+	void disp() {
+		System.out.println("Hospital Head office attdence submited");
+	}}
+class doctor extends system{
+	    int Date=22/6/2026;
+	    int idno=2453&3567;
+		String Name="Abishek doctor";
+		String name="priya nurse";
+		String sec="B Block";
+		String Role="Absent";
+		public void show() {
+			System.out.println("Represented for submitted Attedence book");
+			System.out.println("Date wise be:"+super.Date);
+			System.out.println("Date wise be :"+Date);
+			System.out.println("idno wise be:"+super.idno);
+			System.out.println("idno wise be:"+idno);
+			System.out.println("Name wise be:"+super.Name);
+			System.out.println("Name wise be:"+Name);
+			System.out.println("name wise be:"+super.name);
+			System.out.println("name wise be:"+name);
+			System.out.println("sec  wise be:"+super.sec);
+			System.out.println("sec  wise be:"+sec);
+			System.out.println("Role wise be:"+super.role);
+			System.out.println("Role wise be:"+role);
+			
+		}
+	 
+ }
+class nurse extends doctor{
+	  int Date=22/6/2026;
+	  int idno=3489&2390;
+	  String Name="mani doctor";
+	  String name="vani nurse";
+	  String sec="c Block";
+	  String Role="present";
+	  public void show() {
+		  System.out.println("Return to head office file submitted");
+		  System.out.println("Date wise be:"+super.Date);
+		  System.out.println("idno wise be:"+super.idno);
+		  System.out.println("Name wise be:"+super.Name);
+		  System.out.println("name wise be:"+super.name);
+		  System.out.println("sec wise be:"+super.sec);
+		  System.out.println("Role wise be:"+super.Role);
+		 super.show(); 
+	  }
+	 
+	 
+ }
+	
+
+
+    public class Hospitalsystem {
+
+	public static void main(String[] args) {
+		nurse n=new nurse();
+		n.show();
+		n.disp();
+		
+		
+
+	}
+
+}
+
 
 
 
