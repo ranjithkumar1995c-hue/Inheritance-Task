@@ -228,8 +228,66 @@ package NewInheritance;
 }
 
 }
+A transport system manages different vehicle types such as bike, car, and truck.
 
+package NewInheritance;
+//Task No:6
+class Transport {
+	int bikeno=935058;
+	String Name="Hondashine";
+	String name="ranjith";
+	int Average=55;
+	void disp() {
+		System.out.println("Bike features are Activeted");
+	}
+	class car extends Transport{ 
+		int carno=456746;
+		String Name="Rolls Royce";
+		String name="Ajith";
+		int Average=105;
+		public void show() {
+			System.out.println("Car features are Activeted");
+			System.out.println("bikeno be"+super.bikeno);
+			System.out.println("carno be"+carno);
+			System.out.println("bike Name be"+super.Name);
+			System.out.println("car Name"+Name);
+			System.out.println("bike name be"+super.name);
+			System.out.println("car name"+name);
+			System.out.println("bike average be"+super.Average);
+			System.out.println("car average be"+Average);
+			
+		}
+		
+	}
+	class truck extends car {
+		
+			int truckno=874523;
+			String Name="Mahedra";
+			String name="ravi";
+			int Average=145;
+			public void show() {
+				System.out.println("Truck features are activeted");
+				System.out.println("Name of truck be"+super.Name);
+				System.out.println("name of truck be"+super.name);
+				System.out.println("Average no of truck be"+super.Average);
+			
+			
+		}
+		
+		
+	}
+	
+	
+	
+	public class Transporttask {
+	public static void main(String[] args) {
+		truck t =new truck();
+		t.show();
+		t.disp();
 
+	}
+
+}
 
 
 
