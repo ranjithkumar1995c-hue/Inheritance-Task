@@ -434,6 +434,53 @@ class nurse extends doctor{
 	}
 
 }
+A product catalog includes categories such as electronics and clothing derived from a product class.
+package NewInheritance;
+// Task No:8
+class electronics{
+	int floorno=1;
+	String Name="D mart";
+	String name="Electronices items";
+	String features="Fan,washing machine,Heater.";
+	Long price=(35000L)&(45000L)&(50000L);
+	void disp() {
+		System.out.println("welcome D mart Shopping");
+		
+	}}
+ class clothing extends electronics {
+	    int floorno=2;
+		String Name="D mart";
+		String name="Clothing items";
+		String features="Dress,Pant,Lungi,T-shirt.";
+		Long price=((350)&(450)&(500)&(250L));
+		void show() {
+			System.out.println("purchase Electonices and Clothing items...");
+		    System.out.println("floor no be:"+super.floorno);
+		    System.out.println("Name on be:"+super.Name);
+		    System.out.println("name on be:"+super.name);
+		    System.out.println("features on be:"+super.features);
+		    System.out.println("price on be:"+super.price);
+		    System.out.println("floor no be:"+floorno);
+		    System.out.println("name on be:"+name);
+		    System.out.println("features on be:"+features);
+		    System.out.println("price on be:"+price);
+		   
+		    
+		}
+}
+
+    public class Catalog {
+	public static void main(String[] args) {
+		clothing c=new clothing();
+		c.disp();
+		c.show();
+		
+		
+
+	}
+
+}
+
 
 
 
