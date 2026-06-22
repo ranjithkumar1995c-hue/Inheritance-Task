@@ -181,7 +181,53 @@ package NewInheritance;
 	}
 
    }
+A banking system defines general account behavior while savings and current accounts have specialized features.
 
+package NewInheritance;
+//Task no:5
+ class Banking {
+	 int AcNo=50567;
+	 String name="General A/c";
+	 String Name="ramu";
+	 void disp() {
+		 System.out.println("Banktask main  method is created... ");
+	 }}
+	 class savingaccount extends Banking{
+		 int acno=45679034;
+		 String name="saving A/c";
+		 String Name="ragu";
+		 public void show() {
+			 System.out.println("Saving account created....");
+			 System.out.println("Ac no is created be"+super.AcNo);
+			 System.out.println("ac no is savingcreated be"+acno);
+			 System.out.println("General name be"+super.name);
+		     System.out.println("saving name be"+name);
+		     System.out.println("General Name be"+super.Name);
+		     System.out.println("saving name be"+Name);
+		 }}	 
+	 
+	 class Currentaccount extends savingaccount {
+		 public void show() {
+			 int Acno=567349085;
+			 String name="Current A/c";
+			 String Name="samu";
+			 System.out.println("Currentaccount created...");
+			 System.out.println("Current account name be:"+super.name);
+			 System.out.println("current account Name be:"+Name);
+			super.show(); 
+			 
+		 }
+		 
+	 }
+ public class Bankingtask  { 
+	 public static void main(String[] args) {
+		Currentaccount s=new Currentaccount();
+		s.show();
+		s.disp();
+		
+}
+
+}
 
 
 
