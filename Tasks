@@ -86,5 +86,107 @@ package NewInheritance;
 		c.show();
 
 	}
+A vehicle system defines common features for vehicles while cars have additional behavior such as driving.
+package NewInheritance;
+//Task No:2
+
+class Vehicle {
+	
+//	int race=250;
+//	String color="red";
+//	long price=100000L;
+	String name="Aadi";
+	
+	
+	void vehicletask() {
+		System.out.println("Main  vehicle features created");
+	}}
+class driving extends Vehicletask{
+		String name=" Cooler automatic ON";
+		String color="red";
+		long price=100000L;
+		int race=250;
+		
+		public void show () {
+			this.name=name;
+			this.price=price;
+			this.color=color;
+			this.race=race;
+			
+			System.out.println("driving class method is created...."+name);
+			System.out.println("name of vehicletask be:"+super.name);
+			System.out.println("race of vehicletask be:"+super.race);
+			System.out.println("color of vehicletask be:"+super.color);
+			System.out.println("price of vehicletask be:"+super.price);
+			System.out.println("name of current driving name:"+super.name);
+		    
+		}
+		 
+	}
+   public  class Vehicletask {
+	public String price;
+	public String color;
+	public String race;
+	public String name;
+
+	public static void main(String[] args) {
+		
+		 driving d=new driving();
+		 Vehicle d1=new Vehicle();
+		 
+		 System.out.println(d.color);
+		 System.out.println(d.name);
+		 System.out.println(d.price);
+		 System.out.println(d.race);
+		 System.out.println(d.name);
+ 
+ 	}
+
+}
+A company system manages employees, while managers receive an additional bonus.
+package NewInheritance;
+//Task No:4
+ class Company {
+	int Bonus=25000;
+	void disp () {
+		System.out.println("Company method is created...");
+	}}
+   class manages extends Company{
+	   int employeeno =203;
+	   String name="Ramu";
+	   public void show() {
+		   System.out.println("manages class method is created...");
+		   System.out.println("bonus of Company be:"+super.Bonus);
+		   System.out.println("employeeno of manages be:"+employeeno);
+	   }
+  
+	   }   
+   
+   class employee extends manages{
+	   public void show() {
+		   String name="ranjith";
+		   System.out.println("employee class method created");
+		   System.out.println("Name of child be:"+super.name);
+		   System.out.println("Name of current child be:"+name);
+		   super.show();
+		   
+	   }
+   }
+   public class Companytask {
+	public static void main(String[] args) {
+		manages e=new manages();
+		e.show();
+		
+
+	}
+
+   }
+
+
+
+
+
+
+
 
 }
